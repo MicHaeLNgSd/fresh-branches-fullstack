@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../../components/Header';
 
-function RegistrationPage() {
+function Home() {
   return (
     <>
       <Header />
-      <p>RegistrationPage</p>
+      <p>Home</p>
     </>
   );
 }
 
-export default RegistrationPage;
+export default Home;
