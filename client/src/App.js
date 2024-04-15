@@ -1,9 +1,10 @@
 import { Switch, Route } from 'react-router-dom/cjs/react-router-dom';
-import './App.css';
+import { useState } from 'react';
 import Header from './components/Header';
 import ProfilePage from './pages/ProfilePage';
 import RegistrationPage from './pages/RegistrationPage';
-import { useState } from 'react';
+import './reset.css';
+import './App.css';
 
 function App() {
   const testUser = {

@@ -1,0 +1,33 @@
+@import './../../common/style/vars';
+
+.header {
+  background-color: $header-bg;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $navlink-color;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: none;
+
+  padding: 10px 10px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $navlink-active-bg;
+    border-color: $navlink-color;
+    transition: all 0.4s;
+  }
+}
