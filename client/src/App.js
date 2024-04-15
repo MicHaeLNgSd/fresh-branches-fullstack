@@ -6,18 +6,18 @@ import RegistrationPage from './pages/RegistrationPage';
 import './reset.css';
 import './App.css';
 
-function App() {
-  const testUser = {
-    id: 1,
-    firstName: 'Test',
-    lastName: 'Testovich',
-    imgSrc: 'http',
-    email: 'email@gmail.com',
-    password: 'password',
-    isMale: true,
-  };
-  const [user, setUser] = useState(testUser);
+const testUser = {
+  id: 1,
+  firstName: 'Test',
+  lastName: 'Testovich',
+  imgSrc: 'http',
+  email: 'email@gmail.com',
+  password: 'password',
+  isMale: true,
+};
 
+function App() {
+  const [user, setUser] = useState(testUser);
   return (
     <Switch>
       <Route exact path='/' component={Header} />
