@@ -1,0 +1,70 @@
+.form {
+  background-color: lightskyblue;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid royalblue;
+  display: inline-block;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: max-content;
+}
+
+.input {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  // border: 3px solid transparent;
+  border-radius: 10px;
+  // &:focus {
+  //   border-color: royalblue;
+  // }
+
+  & + .input {
+    margin-top: 20px;
+  }
+}
+
+.inputRadioSection {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.btnsSection {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  & button {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background-color: royalblue;
+    border-radius: 10px;
+    border: 3px solid orange;
+    color: white;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 1.4rem;
+}
+
+// .userPhoto {
+//   width: 60%;
+//   margin: 20px;
+//   border-radius: 50%;
+//   border: 3px solid royalblue;
+// }
+
+.infoWrapper {
+  & p + p {
+    margin-top: 10px;
+  }
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+}
