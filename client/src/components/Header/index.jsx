@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import style from './Header.module.scss';
 
 function Header() {
@@ -7,19 +7,28 @@ function Header() {
     <header className={style.header}>
       <ul className={style.nav}>
         <li>
-          <Link to='/' className={style.navLink}>
+          <NavLink
+            to='/'
+            exact
+            className={style.navLink}
+            activeClassName={style.selected}
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/profile' className={style.navLink}>
+          <NavLink
+            to='/profile'
+            className={style.navLink}
+            activeClassName={style.selected}
+          >
             Profile
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/reg' className={style.navLink}>
+          <NavLink to='/reg' className={style.navLink} activeClassName={style.selected}>
             Registration
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </header>

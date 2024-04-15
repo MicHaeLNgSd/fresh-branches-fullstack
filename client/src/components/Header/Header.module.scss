@@ -30,4 +30,9 @@
     border-color: $navlink-color;
     transition: all 0.4s;
   }
+
+  &.selected {
+    background-color: $navlink-active-bg;
+    border-color: $navlink-current-color;
+  }
 }
