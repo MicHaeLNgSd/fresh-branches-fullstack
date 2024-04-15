@@ -11,7 +11,7 @@ function UserProfile({
       </h3>
       <p>{email}</p>
       <p>{password}</p>
-      <p>{isMale || 'fe'}male</p>
+      <p>{isMale ? '' : 'fe'}male</p>
     </div>
   );
 }
