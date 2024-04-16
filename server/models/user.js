@@ -5,7 +5,7 @@ const EMAIL_VALIDATION_SCHEMA = yup.string().required().email();
 
 const userSchema = new Schema({
   firstName: { type: String, required: [true, 'firstName is a required field'] },
-  lastName: { type: String, required: [true, 'lastName is a required field'] },
+  lastName: { type: String },
   imgSrc: {
     type: String,
     required: [true, 'firstName is a required field'],
